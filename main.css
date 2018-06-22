@@ -1,0 +1,11 @@
+* {
+	background-color: #474646;
+}
+
+#startPage, #mainContent {
+	color: white;
+}
+
+#mainContent {
+	display: none;
+}

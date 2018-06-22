@@ -1,3 +1,14 @@
+function enterMainContent() {
+	$(".button.enterHere").on("click", function(){
+		console.log("enterMainContent() ran");
+		$("#startPage").hide();
+		$("#mainContent").show();
+	});
+}
+
+
+
+
 function listenForSubmit() {
 	console.log("listenForSubmit() ran");
 	$("#searchWordForm").submit(function(event) {
@@ -82,4 +93,5 @@ function showError() {
 
 
 $(listenForSubmit);
+$(enterMainContent);
 
