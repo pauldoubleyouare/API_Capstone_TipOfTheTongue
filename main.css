@@ -1,7 +1,99 @@
+/*Color schemes!
+light blue links: #48AEDF
+dark gray bg: #2D2F27
+purple numbers: #AA81DD
+bright green: #93D42E;
+hot pink: #EA287C;
+white 
+
+*/
+
+
 * {
-	background-color: #474646;
+	background-color: #2D2F27;
 	box-sizing: border-box;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#instructions {
+	width: 500px;
+	height: 400px%;
+	color: #68CFDF;
+}
+
+input {
+	width: 30%;
+	padding: 10px 10px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+
+}
+
+#startPage {
+	justify-content: center;
+	/*border: 2px solid white;*/
+	font-family: 'Inconsolata', monospace;
+}
+
+#startPage h1 {
+	margin: 0 auto;
+	/*border: 2px solid white;*/
+	text-align: center;
+}
+
+#instructions {
+	margin: 0 auto;
+	/*border: 2px solid white;*/
+	text-align: center;
+}
+
+
+
+.button {
+	display: inline-block;
+	border: 1px solid;
+	border-color: #D7E7EA;
+	border-radius: 8px;
+	background-color: RGBA(0,0,0,0);
+	color: #EA287C;
+	padding: 14px 28px;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 2px white;
+	font-family: 'Inconsolata', monospace;
+}
+
+button.button.enterHere {
+	display: block;
+	margin: 0 auto;
+}
+
+.enterHere {
+	border-color: white;
+}
+
+.enterHere:hover {
+	background-color: white;
+	color: #AA81DD;
+	border-color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.searchWordButton:hover {
+	background-color: white;
+	color: black;
+	border-color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
 
 #searchTermResults {
 	display: inline-block;
@@ -11,8 +103,11 @@
 
 #startPage, #mainContent {
 	color: white;
+
 }
 
 #mainContent {
 	display: none;
+	font-family: 'Inconsolata', monospace;
 }
+
