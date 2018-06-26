@@ -7,44 +7,59 @@
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 </head>
 <body>
+	<header role="banner">
+		<button id="modalBtn"></button>
+			<div id="sourcesModal" class="modal">
+				<div class="modal-content">
+					<span class="closeBtn">x</span>
+					<p>Sources: 
+						<ul><li>Giphy API: <a href="https://developers.giphy.com/docs/" target="_blank">click here</a></li>
+							<li>Words API: <a href="https://www.wordsapi.com/docs/" target="_blank">click here</a></li></ul>
+					</p>
+				</div>
+			</div>
+	</header>
 
-<div id="startPage">
-	<h1>Welcome to Tip of the Tongue!</h1>
-	<section role="marquee" id="instructions">
-		<p>You know the feeling when you can't quite think of 'that' word? The word that's on the tip of your tongue?</p>
-		<p>After you click the 'Enter' button below, you'll be taken to a search page. Type in a word that's similar to the one you're looking for and you'll get back a list of synonyms.</p>
-		<p>In the end, we're here to help you find that word. If we don't, then hopefully these Giphy's will cheer you up. Enjoy.</p>
-	</section>
-	<button class="button enterHere">Enter</button>
-</div>
 
-<div id="mainContent">
-	<header role="header">Tip of the Tongue</header>
-		
 
+	<div id="startPage">
+			
+		<section role="marquee" class="instructionsContainer">
+			<h1>Welcome to Tip of the Tongue!</h1>
+			<div id="instructions">
+				<p>You know the feeling when you can't quite think of 'that' word? The word that's on the tip of your tongue?</p>
+				<p>After you click the 'Enter' button below, you'll be taken to a search page. Type in a word that's similar to the one you're looking for and you'll get back a list of synonyms.</p>
+				<p>In the end, we're here to help you find that word. If we don't, then hopefully these Giphy's will cheer you up. Enjoy.</p>
+			</div>
+			<button class="button enterHere">Enter</button>
+		</section>
+			
+	</div>
+
+	<div id="mainContent">
 		<form id="searchWordForm">
 			<input type="text" class="searchTermInput" aria-label="Enter Search Term" placeholder="Tip: check spelling before submit"></input>
 			<button class="button searchWordButton">Help me out!</button>
 		</form>
 
 
-	<main role="main" aria-live="assertive">
-		<section role="contentinfo">
-			<div id="searchTermResults">
-				<div id="wordItself"></div>
-				<div id="wordDefinition"></div>
-				<div id="wordSynonyms"></div>
-			</div>
+		<main role="main" aria-live="assertive">
+			<section role="contentinfo">
+				<div id="searchTermResults">
+					<div id="wordItself"></div>
+					<div id="wordDefinition"></div>
+					<div id="wordSynonyms"></div>
+				</div>
+				<div id="giphyResult"></div>
+			</section>
+		</main>
+	</div>
 
-			<div id="giphyResult"></div>
-		</section>
-	</main>
 
-	<footer role="footer"></footer>
-</div>
+		<footer role="footer">Tip of the Tongue | <img id="tongueIcon" src="https://github.com/pauldoubleyouare/API_Capstone_TipOfTheTongue/blob/master/tongue%20icon1.png?raw=true" alt="small red outline of a tongue"> | 2018 </footer>
 
-<script src='https://s3.amazonaws.com/rapidapi-prod-fe_static/rapidapi.min.js'></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
-</body>
+		<script src='https://s3.amazonaws.com/rapidapi-prod-fe_static/rapidapi.min.js'></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
 </html>

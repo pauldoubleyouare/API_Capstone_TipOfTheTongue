@@ -7,7 +7,24 @@ function enterMainContent() {
 }
 
 
+/* Modal functions */
 
+function handleModal() {
+	console.log("handleModal() ran");
+	let modal = $(".modal");
+	let btn = $("#modalBtn");
+	btn.on("click", function(){
+		modal.show();
+	});
+}
+
+function closeModal() {
+	let modal = $(".modal");
+	let closeBtn = $(".closeBtn");
+	closeBtn.on("click", function(){
+		modal.hide();
+	});
+}
 
 
 function getDataFromWordsAPI(searchTerm) {
@@ -129,4 +146,6 @@ function listenForSubmit() {
 
 $(listenForSubmit);
 $(enterMainContent);
+$(handleModal);
+$(closeModal);
 

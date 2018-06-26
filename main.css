@@ -6,6 +6,12 @@ bright green: #93D42E;
 hot pink: #EA287C;
 white 
 
+for the gif image, you can use     width: 100%;
+   max-width: 500px;
+
+and the will make it responsive
+
+
 */
 
 
@@ -18,6 +24,96 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+header {
+	text-align: right;
+	color: #93D42E;
+	font-family: 'Inconsolata', monospace;
+
+}
+
+footer {
+	position: absolute;
+	color: white;
+	bottom: 0;
+	font-family: 'Inconsolata', monospace;
+}
+
+#tongueIcon {
+	width: 12px;
+	height: 12px;
+}
+
+h1 {
+	color: #93D42E;
+	font-size: 32px;
+}
+
+/*========MODAL STYLING===========*/
+
+#modalBtn {
+	background-image: url("https://github.com/pauldoubleyouare/API_Capstone_TipOfTheTongue/blob/master/hamburgerFinal.png?raw=true");
+	background-size: 60px 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	border: none;
+	margin-right: 20px
+	margin-top: 20px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+	background-color: white;
+	color: black;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid white;
+	width: 80%;
+}
+
+.close {
+	color: white;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+span.closeBtn {
+	font-size: 30px;
+	background-color: white;
+	color: black;
+}
+
+.modal-content p, li, ul, a {
+	background-color: white;
+	color: black;
+	text-align: left;
+}
+
+/*===============================*/
+
+
 
 #instructions {
 	width: 500px;
@@ -36,20 +132,24 @@ input {
 
 #startPage {
 	justify-content: center;
-	/*border: 2px solid white;*/
 	font-family: 'Inconsolata', monospace;
+	height: 500px;
 }
 
 #startPage h1 {
-	margin: 0 auto;
-	/*border: 2px solid white;*/
 	text-align: center;
+}
+
+section.instructionsContainer {
+	display: block;
+	width: 500px;
+	margin: 0 auto;
 }
 
 #instructions {
 	margin: 0 auto;
-	/*border: 2px solid white;*/
 	text-align: center;
+	width: 100%;
 }
 
 
@@ -64,8 +164,10 @@ input {
 	padding: 14px 28px;
 	font-size: 20px;
 	cursor: pointer;
-	box-shadow: 2px white;
+	/*box-shadow: 4px 4px 4px white;*/
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
 }
 
 button.button.enterHere {
@@ -92,7 +194,10 @@ button.button.enterHere {
 }
 
 
-
+#giphyResult {
+	width: 100%;
+	max-width: 500px;
+}
 
 
 #searchTermResults {
