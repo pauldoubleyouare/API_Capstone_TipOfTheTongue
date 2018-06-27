@@ -22,8 +22,11 @@ and the will make it responsive
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    height: 100%;
+    padding: 0 5px;
 }
+
+
 
 header {
 	text-align: right;
@@ -33,10 +36,12 @@ header {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	color: white;
 	bottom: 0;
-	font-family: 'Inconsolata', monospace;
+	left: 0;
+	padding-left: 15px;
+	font-family: 'Yellowtail', cursive;
 }
 
 #tongueIcon {
@@ -53,12 +58,12 @@ h1 {
 
 #modalBtn {
 	background-image: url("https://github.com/pauldoubleyouare/API_Capstone_TipOfTheTongue/blob/master/hamburgerFinal.png?raw=true");
-	background-size: 60px 60px;
+	background-size: 45px 45px;
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 	border: none;
 	margin-right: 20px
 	margin-top: 20px;
@@ -116,10 +121,12 @@ span.closeBtn {
 
 
 #instructions {
-	width: 500px;
-	height: 400px%;
 	color: #68CFDF;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 }
+
 
 input {
 	width: 30%;
@@ -134,6 +141,7 @@ input {
 	justify-content: center;
 	font-family: 'Inconsolata', monospace;
 	height: 500px;
+
 }
 
 #startPage h1 {
@@ -142,15 +150,10 @@ input {
 
 section.instructionsContainer {
 	display: block;
-	width: 500px;
+	max-width: 500px;
 	margin: 0 auto;
 }
 
-#instructions {
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-}
 
 
 
@@ -164,7 +167,6 @@ section.instructionsContainer {
 	padding: 14px 28px;
 	font-size: 20px;
 	cursor: pointer;
-	/*box-shadow: 4px 4px 4px white;*/
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 	font-family: 'Inconsolata', monospace;
 	font-weight: bold;
@@ -186,8 +188,13 @@ button.button.enterHere {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+
+
+/*===== Search Form =====*/
 #searchWordForm {
 	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
 }
 
 .searchWordButton:hover {
@@ -197,29 +204,52 @@ button.button.enterHere {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+input.searchTermInput {
+	width: 100%;
+	font-size: 13px;
+	padding: 10px;
+}
+
+
+button.button.searchWordButton {
+	padding: 10px;
+	margin: 10px;
+}
+
+
 
 
 /* ===== Giphy Image container ===== */
 #giphyContainer {
+	text-align: center;
 	position: absolute;
-	width: 300px;
+	width: 100%;
 	height:300px;
+	
 }
 
-/*#giphyResult {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	/*max-width: 500px;
-} */
+div#giphyResult {
+	margin: auto;
+	padding-right: 10px;
+	width: 100%;
+} 
 
 img#giphyImage {
+	display: block;
+	margin: 0 auto;
 	width: 200px;
 	height: 200px;
-	border: none;
+	display: none;
+	padding-top: 15px;
 }
 
 /*===== =====*/
+
+
+.wordDetails {
+	color: #48AEDF;
+	font-size: 25px;
+}
 
 
 #searchTermResults {
