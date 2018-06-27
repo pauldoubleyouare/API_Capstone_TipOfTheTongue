@@ -1,7 +1,7 @@
 Project Name: Tip of the Tongue
 
 Link to live project:
-
+https://pauldoubleyouare.github.io/Tip-of-the-Tongue/
 
 Summary:
 - Tip of the Tongue a simple app that lets users search a word/term to find similar meaning words (a.k.a. - synonyms). 
