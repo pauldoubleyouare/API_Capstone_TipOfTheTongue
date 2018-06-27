@@ -186,6 +186,10 @@ button.button.enterHere {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+#searchWordForm {
+	margin: 0 auto;
+}
+
 .searchWordButton:hover {
 	background-color: white;
 	color: black;
@@ -194,10 +198,28 @@ button.button.enterHere {
 }
 
 
-#giphyResult {
-	width: 100%;
-	max-width: 500px;
+
+/* ===== Giphy Image container ===== */
+#giphyContainer {
+	position: absolute;
+	width: 300px;
+	height:300px;
 }
+
+/*#giphyResult {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	/*max-width: 500px;
+} */
+
+img#giphyImage {
+	width: 200px;
+	height: 200px;
+	border: none;
+}
+
+/*===== =====*/
 
 
 #searchTermResults {
